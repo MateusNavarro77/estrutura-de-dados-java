@@ -23,4 +23,10 @@ public class WeightedEdge {
     public int to() {
         return w;
     }
+
+    @Override
+    public String toString() {
+        return "WeightedEdge [v=" + v + ", w=" + w + ", weight=" + weight + "]";
+    }
+
 }
