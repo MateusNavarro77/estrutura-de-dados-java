@@ -34,6 +34,14 @@ public class LazyPrim {
         }
     }
 
+    public double mstWeight() {
+        double sum = 0;
+        for (WeightedEdge edge : mst) {
+            sum += edge.weight();
+        }
+        return sum;
+    }
+
     private void visit(int vertex) {
         marked[vertex] = true;
         for (WeightedEdge edge : originalGraph.adj(vertex)) {
