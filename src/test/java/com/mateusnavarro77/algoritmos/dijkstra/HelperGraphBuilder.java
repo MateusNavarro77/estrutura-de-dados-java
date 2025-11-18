@@ -1,7 +1,7 @@
 package com.mateusnavarro77.algoritmos.dijkstra;
 
 public class HelperGraphBuilder {
-    static DirectedWeightedGraph buildLargeGraph() {
+    static public DirectedWeightedGraph buildLargeGraph() {
         DirectedWeightedGraph g = new DirectedWeightedGraph(63);
         g.addEdge(new WeightedEdge(0, 1, 46.0));
         g.addEdge(new WeightedEdge(0, 20, 34.0));
